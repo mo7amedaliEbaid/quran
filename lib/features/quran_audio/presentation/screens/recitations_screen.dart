@@ -29,8 +29,8 @@ class RecitationsScreen extends StatelessWidget {
         listener: (context, state) {},
         builder: (context, state) {
           var cubit = RecitationsCubit.get(context);
-          return ScaffoldCustom(
-            appBarCustom: const AppBarCustom(
+          return Scaffold(
+            appBar: const AppBarCustom(
               text: 'القراء',
             ),
             body: SingleChildScrollView(
@@ -141,7 +141,7 @@ class RecitationsScreen extends StatelessWidget {
                                     mainAxisSpacing: 20),
                           )
                         : state is GetRecitationsLoadingState
-                            ? const GridShimmer()
+                            ? const Center(child: CircularProgressIndicator(),)
                             : ErrorWidgetCustom(onPress: () {
                                 cubit.getRecitationsFun();
                               }),

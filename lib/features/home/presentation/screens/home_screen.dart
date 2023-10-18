@@ -1,72 +1,58 @@
-import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:hesn_elmuslim/features/quran/presentation/screens/quran_screen.dart';
+import 'package:hesn_elmuslim/features/quran/presentation/screens/quran_surah_screen.dart';
 
-import 'package:hesn_elmuslim/core/utils/assets_manager.dart';
-import 'package:hesn_elmuslim/core/utils/routes_manager.dart';
-import 'package:hesn_elmuslim/core/utils/strings_manager.dart';
-import 'package:hesn_elmuslim/core/utils/values_manager.dart';
-
-import '../../../../core/utils/color_manager.dart';
 import '../../../../core/utils/media_query_values.dart';
 
-import '../widgets/home_card.dart';
-import '../widgets/home_item.dart';
+import '../../../quran_audio/presentation/screens/recitations_screen.dart';
 
-class HomeScreen extends StatelessWidget {
+
+class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  List<Widget> screens = [
+    const RecitationsScreen(),
+    const QuranSurahScreen(),
+    const QuranScreen(),
+  ];
+
+  int currentPageIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
 
     return Scaffold(
-      body: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            SizedBox(
-              height: AppSize.s100 * 2.6,
-              child: Stack(
-                alignment: Alignment.bottomCenter,
-                children: [
-                  Container(
-                    width: double.infinity,
-                    color: ColorManager.secondary2,
-                  ),
-                  SizedBox(
-                    width: double.infinity,
-                    height: AppSize.s100 * 2.6,
-                    child: FadeIn(
-                      child: Image.asset(
-                        ImageAssets.mosqueImg,
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
+        bottomNavigationBar: NavigationBar(
+          onDestinationSelected: (int index) {
+            setState(() {
+              currentPageIndex = index;
+            });
+          },
+          indicatorColor: Colors.green,
+          selectedIndex: currentPageIndex,
+          destinations: const <Widget>[
+            NavigationDestination(
+              selectedIcon: Icon(Icons.home),
+              icon: Icon(Icons.home_outlined),
+              label: 'القران',
             ),
-            const HomeItem(title: 'القرآن الكريم', widgets: <Widget>[
-              HomeCard(
-                label: AppStrings.quran,
-                url: ImageAssets.quranImg,
-                screen: Routes.quranRoute,
-              ),
-              HomeCard(
-                label: AppStrings.quran2,
-                url: ImageAssets.quranAImg,
-                screen: Routes.recitationsRoute,
-              ),
-              HomeCard(
-                label: AppStrings.quran1,
-                url: ImageAssets.quran1Img,
-                screen: Routes.quranOffRoute,
-              ),
-
-            ]),
+            NavigationDestination(
+              icon: Icon(Icons.audio_file),
+              label: 'القراءة',
+            ),
+            NavigationDestination(
+              selectedIcon: Icon(Icons.my_library_books_sharp),
+              icon: Icon(Icons.my_library_books_sharp),
+              label: 'المصحف',
+            ),
           ],
         ),
-      ),
-    );
+        body: screens[currentPageIndex]);
   }
 }

@@ -101,7 +101,7 @@ class QuranAudioScreen extends StatelessWidget {
                                     mainAxisSpacing: 20),
                           )
                         : state is GetAudioLoadingState
-                            ? const GridShimmer()
+                            ?const Center(child: CircularProgressIndicator(),)
                             : ErrorWidgetCustom(onPress: () {
                                 cubit.getAudioFun();
                               }),

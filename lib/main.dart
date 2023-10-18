@@ -6,6 +6,7 @@ import 'package:hesn_elmuslim/core/utils/routes_manager.dart';
 import 'package:hesn_elmuslim/core/utils/strings_manager.dart';
 
 import 'package:hesn_elmuslim/features/quran/presentation/quran_off/quran_off_cubit.dart';
+import 'package:wakelock/wakelock.dart';
 import 'core/local/cache_helper.dart';
 import 'core/utils/theme_manager.dart';
 import 'features/quran/presentation/quran_cubit/quran_cubit.dart';
@@ -18,6 +19,9 @@ import 'observer.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  Wakelock.enable();
+
   await di.init();
   await CacheHelper.init();
 
@@ -25,6 +29,7 @@ void main() async {
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
 
   Bloc.observer = MyBlocObserver();
+
   runApp(const MyApp());
 }
 
@@ -42,28 +47,16 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (context) => sl<AudioCubit>()),
       ],
       child: ScreenUtilInit(
-        designSize: const Size(400, 860),
-        minTextAdapt: true,
-        splitScreenMode: true,
-        builder: (BuildContext context, widgets) => MaterialApp(
-          title: AppStrings.appName,
+        child: MaterialApp(
+            title: AppStrings.appName,
+            routes: RoutesMap.routesMap(),
 
-          routes: RoutesMap.routesMap(),
-          builder: (context, widget) {
+            debugShowCheckedModeBanner: false,
 
-            return MediaQuery(
-              data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
-              child: Directionality(
-                textDirection: TextDirection.rtl,
-                child: widget!,
-              ),
-            );
-          },
-          debugShowCheckedModeBanner: false,
-          theme: getApplicationTheme(),
-          initialRoute: Routes.homeRoute,
-        ),
+            initialRoute: Routes.homeRoute,
+          ),
       ),
+
     );
   }
 }

@@ -10,7 +10,6 @@ import '../../features/quran_audio/presentation/screens/recitations_screen.dart'
 
 
 class Routes {
-  static const String mainRoute = "mainScreen";
   static const String homeRoute = "homeScreen";
 
 
@@ -85,7 +84,7 @@ class RoutesMap {
         return const SurahScreen();
 
       default:
-        return const ScaffoldCustom(body: SizedBox());
+        return const HomeScreen();
     }
   }
 }
