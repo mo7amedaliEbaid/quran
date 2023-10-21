@@ -42,7 +42,6 @@ class DioConsumer implements ApiConsumer {
       final response = await client.get(
         path,
         queryParameters: queryParameters,
-        options: Options(headers: {"x-auth-token": AppConstants.token}),
       );
 
       return _handleResponseAsJson(response);

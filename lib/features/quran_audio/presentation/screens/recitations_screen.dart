@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:quran/core/utils/values_manager.dart';
 import 'package:quran/core/widgets/component.dart';
+import 'package:quran/core/widgets/scaffold_custom/scaffold_custom.dart';
 import 'package:quran/core/widgets/shimmer_custom/grid_shimmer.dart';
 import '../../../../core/utils/assets_manager.dart';
 import '../../../../core/utils/color_manager.dart';
@@ -29,8 +30,8 @@ class RecitationsScreen extends StatelessWidget {
         listener: (context, state) {},
         builder: (context, state) {
           var cubit = RecitationsCubit.get(context);
-          return Scaffold(
-            appBar: const AppBarCustom(
+          return ScaffoldCustom(
+            appBarCustom: const AppBarCustom(
               text: 'القراء',
               isNull: false,
             ),
@@ -142,7 +143,9 @@ class RecitationsScreen extends StatelessWidget {
                                     mainAxisSpacing: 20),
                           )
                         : state is GetRecitationsLoadingState
-                            ? const Center(child: GridShimmer(),)
+                            ? const Center(
+                                child: GridShimmer(),
+                              )
                             : ErrorWidgetCustom(onPress: () {
                                 cubit.getRecitationsFun();
                               }),

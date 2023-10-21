@@ -5,7 +5,7 @@ class ColorManager {
   static const Color primary = Color(0xff1b860d);
   static const Color secondary = Color(0xff17731f);
   static const Color secondary1 = Color(0xff61cb51);
-  static const Color secondary2 = Color(0xff97e55e);
+  static const Color secondary2 = Color(0xff66bd39);
   static const Color secondary3 = Color(0xfffff201);
 
   static const Color scaffold = Color(0xffF3F7FA);
@@ -17,13 +17,13 @@ class ColorManager {
   static const kGreenColor = Color(0xFF001E42);
   static const greenColor = Color(0xFF019875);
   static const Color indicatorColor = Color(0xffF7F7F7);
-  static const Color labelUnSelectedColor = Color(0xffb69c24);
+  static const Color labelUnSelectedColor = Color(0xffffd300);
   static const Color prerequisiteCardColor = Color(0xffFCFCFC);
 
   // static const Color cardColor = Color(0xff98c1d9);
   static const Color cardColor = Color(0xff36A6BF);
   // static const Color card1Color = Color(0xff98DAD9);
-  static const Color card1Color = Color(0xff3fcc20);
+  static const Color card1Color = Color(0xff3bc21d);
 
   static const Color frameColor = Color(0xff175973);
   static const Color checkboxColor = Color(0xffECECEC);

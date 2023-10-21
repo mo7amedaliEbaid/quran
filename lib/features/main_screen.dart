@@ -7,14 +7,14 @@ import '../core/utils/media_query_values.dart';
 import 'quran_audio/presentation/screens/recitations_screen.dart';
 
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class MainScreen extends StatefulWidget {
+  const MainScreen({Key? key}) : super(key: key);
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<MainScreen> createState() => _MainScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _MainScreenState extends State<MainScreen> {
   List<Widget> screens = [
     const RecitationsScreen(),
     const QuranSurahScreen(),

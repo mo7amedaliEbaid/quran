@@ -45,7 +45,7 @@ class Routes {
 class RoutesMap {
   static Map<String, Widget Function(BuildContext)> routesMap() {
     return {
-      Routes.homeRoute: (BuildContext context) => const HomeScreen(),
+      Routes.homeRoute: (BuildContext context) => const MainScreen(),
 
       Routes.quranRoute: (BuildContext context) => const QuranSurahScreen(),
       Routes.quranOffRoute: (BuildContext context) => const QuranScreen(),
@@ -64,7 +64,7 @@ class RoutesMap {
     switch (screen) {
 
       case Routes.homeRoute:
-        return const HomeScreen();
+        return const MainScreen();
 
 
 
@@ -83,7 +83,7 @@ class RoutesMap {
         return const SurahScreen();
 
       default:
-        return const HomeScreen();
+        return const MainScreen();
     }
   }
 }
