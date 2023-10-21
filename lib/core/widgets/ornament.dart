@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hesn_elmuslim/core/widgets/svg_pic/svg_pic.dart';
+import 'package:quran/core/widgets/svg_pic/svg_pic.dart';
 
 import '../utils/color_manager.dart';
 import '../utils/values_manager.dart';

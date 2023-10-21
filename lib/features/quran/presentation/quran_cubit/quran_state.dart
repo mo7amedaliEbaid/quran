@@ -1,5 +1,5 @@
-import 'package:hesn_elmuslim/features/quran/domain/entities/quran_audio_entity.dart';
-import 'package:hesn_elmuslim/features/quran/domain/entities/quran_entity.dart';
+import 'package:quran/features/quran/domain/entities/quran_audio_entity.dart';
+import 'package:quran/features/quran/domain/entities/quran_entity.dart';
 
 abstract class QuranStates {}
 

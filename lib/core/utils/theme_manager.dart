@@ -1,4 +1,3 @@
-/*
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -46,15 +45,16 @@ ThemeData getApplicationTheme() {
     // app bar theme
     appBarTheme: AppBarTheme(
         centerTitle: true,
-        color: ColorManager.scaffold,
+        color: ColorManager.secondary1,
         // shadowColor: ColorManager.lightPrimary,
-        elevation: AppSize.s0,
+        elevation: AppSize.s10,
+
         systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarIconBrightness: Brightness.dark,
           statusBarColor: ColorManager.scaffold,
         ),
         titleTextStyle: getRegularStyle(
-            fontSize: FontSize.s16, color: ColorManager.scaffold)),
+            fontSize: FontSize.s32, color: ColorManager.scaffold)),
 
     scaffoldBackgroundColor: ColorManager.scaffold,
     // button theme
@@ -75,7 +75,7 @@ ThemeData getApplicationTheme() {
                 borderRadius: BorderRadius.circular(AppSize.s12)))),
 
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
-      backgroundColor: ColorManager.secondary,
+      backgroundColor: ColorManager.secondary1,
     ),
 
     textTheme: TextTheme(
@@ -125,4 +125,3 @@ ThemeData getApplicationTheme() {
     // label style
   );
 }
-*/

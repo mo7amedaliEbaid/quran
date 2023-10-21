@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hesn_elmuslim/core/utils/strings_manager.dart';
+import 'package:quran/core/utils/strings_manager.dart';
 
 import '../local/cache_helper.dart';
 import 'color_manager.dart';

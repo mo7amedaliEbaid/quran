@@ -1,4 +1,4 @@
-import 'package:hesn_elmuslim/core/utils/font_manager.dart';
+import 'package:quran/core/utils/font_manager.dart';
 
 import '../../../core/utils/color_manager.dart';
 import 'package:flutter/material.dart';
@@ -19,23 +19,26 @@ class AppBarCustom extends StatelessWidget implements PreferredSizeWidget {
   final double? fontSize;
   final FontWeight? fontWeight;
   final bool? centerTitle;
+  final bool? autoarrow;
   final Widget? widget;
   final Color? backgroundColor;
   final Color? textColor;
   final Color? iconColor;
   final Brightness? brightness;
+
   const AppBarCustom({
     Key? key,
     this.iconData = Icons.arrow_back_rounded,
     this.text = '',
     this.widget,
     this.onPressed,
+    this.autoarrow,
     this.isNull = true,
     this.centerTitle = true,
     this.textAlign = TextAlign.center,
     this.fontSize = FontSize.s12 * 2,
     this.fontWeight = FontWeight.w600,
-    this.backgroundColor = ColorManager.scaffold,
+    this.backgroundColor = ColorManager.secondary1,
     this.brightness = Brightness.dark,
     this.textColor = ColorManager.black,
     this.iconColor = ColorManager.primary,
@@ -47,10 +50,7 @@ class AppBarCustom extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       backgroundColor: backgroundColor,
       centerTitle: centerTitle,
-      systemOverlayStyle: SystemUiOverlayStyle(
-        statusBarIconBrightness: brightness,
-        statusBarColor: backgroundColor,
-      ),
+      automaticallyImplyLeading: false,
       leading: isNull!
           ? IconButton(
               onPressed: () {

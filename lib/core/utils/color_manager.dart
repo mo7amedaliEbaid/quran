@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class ColorManager {
   static Color swatch = HexColor.fromHex("#ff011C26");
-  static const Color primary = Color(0xff011C26);
+  static const Color primary = Color(0xff2a5b2d);
   static const Color secondary = Color(0xff175973);
-  static const Color secondary1 = Color(0xff2E84A6);
-  static const Color secondary2 = Color(0xff36A6BF);
+  static const Color secondary1 = Color(0xff2ea658);
+  static const Color secondary2 = Color(0xff5db02f);
   static const Color secondary3 = Color(0xffD3F2B3);
 
   static const Color scaffold = Color(0xffF3F7FA);
@@ -17,13 +17,13 @@ class ColorManager {
   static const kGreenColor = Color(0xFF001E42);
   static const greenColor = Color(0xFF019875);
   static const Color indicatorColor = Color(0xffF7F7F7);
-  static const Color labelUnSelectedColor = Color(0xffB2B2B2);
+  static const Color labelUnSelectedColor = Color(0xffffee00);
   static const Color prerequisiteCardColor = Color(0xffFCFCFC);
 
   // static const Color cardColor = Color(0xff98c1d9);
   static const Color cardColor = Color(0xff36A6BF);
   // static const Color card1Color = Color(0xff98DAD9);
-  static const Color card1Color = Color(0xff2E84A6);
+  static const Color card1Color = Color(0xff5eb66c);
 
   static const Color frameColor = Color(0xff175973);
   static const Color checkboxColor = Color(0xffECECEC);

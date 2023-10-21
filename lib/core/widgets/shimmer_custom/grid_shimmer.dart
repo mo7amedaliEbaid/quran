@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hesn_elmuslim/core/utils/color_manager.dart';
-import 'package:hesn_elmuslim/core/widgets/shimmer_custom/shimmer_custom.dart';
+import 'package:quran/core/widgets/shimmer_custom/shimmer_custom.dart';
+
+import '../../utils/color_manager.dart';
 
 class GridShimmer extends StatelessWidget {
   const GridShimmer({

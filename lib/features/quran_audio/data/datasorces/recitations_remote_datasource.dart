@@ -1,4 +1,4 @@
-import 'package:hesn_elmuslim/features/quran_audio/data/models/audio_model.dart';
+import 'package:quran/features/quran_audio/data/models/audio_model.dart';
 
 import '../../../../core/api/api_consumer.dart';
 import '../../../../core/api/end_points.dart';

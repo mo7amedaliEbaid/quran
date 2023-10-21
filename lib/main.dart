@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hesn_elmuslim/core/utils/routes_manager.dart';
-import 'package:hesn_elmuslim/core/utils/strings_manager.dart';
+import 'package:quran/core/utils/routes_manager.dart';
+import 'package:quran/core/utils/strings_manager.dart';
+import 'package:quran/core/utils/theme_manager.dart';
 
-import 'package:hesn_elmuslim/features/quran/presentation/quran_off/quran_off_cubit.dart';
-import 'package:wakelock/wakelock.dart';
+import 'package:quran/features/quran/presentation/quran_off/quran_off_cubit.dart';
+//import 'package:wakelock/wakelock.dart';
 import 'core/local/cache_helper.dart';
-import 'core/utils/theme_manager.dart';
 import 'features/quran/presentation/quran_cubit/quran_cubit.dart';
 import 'features/quran/presentation/surah_cubit/surah_cubit.dart';
 import 'features/quran_audio/presentation/controller/aduio_cubit/audio_cubit.dart';
-import 'features/quran_audio/presentation/controller/recitations_cubit/recitations_cubit.dart';
+import 'features/quran_audio/presentation/controller/readers_cubit/readers_cubit.dart';
 import 'di/di.dart';
 import 'di/di.dart' as di;
 import 'observer.dart';
@@ -20,13 +20,15 @@ import 'observer.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  Wakelock.enable();
+//  Wakelock.enable();
 
   await di.init();
   await CacheHelper.init();
 
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
+
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
 
   Bloc.observer = MyBlocObserver();
 
@@ -52,6 +54,7 @@ class MyApp extends StatelessWidget {
             routes: RoutesMap.routesMap(),
 
             debugShowCheckedModeBanner: false,
+            theme: getApplicationTheme(),
 
             initialRoute: Routes.homeRoute,
           ),

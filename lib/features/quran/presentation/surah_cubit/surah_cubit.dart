@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hesn_elmuslim/core/usecases/usecase.dart';
+import 'package:quran/core/usecases/usecase.dart';
 import '../../../../core/error/failure.dart';
 import '../../domain/entities/surah_entity.dart';
 import '../../domain/usecases/quran_usecase.dart';

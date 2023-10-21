@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:hesn_elmuslim/core/utils/color_manager.dart';
+import 'package:quran/core/utils/color_manager.dart';
 
 import '../utils/constants_manager.dart';
 import '../utils/font_manager.dart';

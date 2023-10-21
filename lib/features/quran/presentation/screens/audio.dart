@@ -1,9 +1,9 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hesn_elmuslim/core/utils/color_manager.dart';
-import 'package:hesn_elmuslim/core/utils/values_manager.dart';
-import 'package:hesn_elmuslim/core/widgets/text_custom/text_custom.dart';
+import 'package:quran/core/utils/color_manager.dart';
+import 'package:quran/core/utils/values_manager.dart';
+import 'package:quran/core/widgets/text_custom/text_custom.dart';
 import '../audio_cubit/audio_cubit.dart';
 import '../audio_cubit/audio_state.dart';
 
