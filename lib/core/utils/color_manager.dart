@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class ColorManager {
   static Color swatch = HexColor.fromHex("#ff011C26");
-  static const Color primary = Color(0xff011C26);
+  static const Color primary = Color(0xff1b860d);
   static const Color secondary = Color(0xff17731f);
   static const Color secondary1 = Color(0xff61cb51);
   static const Color secondary2 = Color(0xff97e55e);

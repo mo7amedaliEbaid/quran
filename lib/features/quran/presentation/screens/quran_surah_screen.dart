@@ -77,7 +77,7 @@ class QuranSurahScreen extends StatelessWidget {
                                   blurRadius: 2.0,
                                 ),
                               ],
-                              color: ColorManager.cardColor,
+                              color: ColorManager.secondary1,
                             ),
                             child: ListTile(
                                 title: TextCustom(
