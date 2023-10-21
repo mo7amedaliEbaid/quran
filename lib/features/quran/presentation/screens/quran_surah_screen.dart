@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hesn_elmuslim/core/utils/routes_manager.dart';
-import 'package:hesn_elmuslim/core/widgets/component.dart';
-import 'package:hesn_elmuslim/features/quran/presentation/surah_cubit/surah_cubit.dart';
+import 'package:quran/core/utils/routes_manager.dart';
+import 'package:quran/core/widgets/component.dart';
+import 'package:quran/features/quran/presentation/surah_cubit/surah_cubit.dart';
 
 import '../../../../core/utils/color_manager.dart';
 import '../../../../core/widgets/app_bar/app_bar_custom.dart';

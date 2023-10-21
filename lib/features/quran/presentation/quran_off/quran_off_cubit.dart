@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hesn_elmuslim/core/local/cache_helper.dart';
-import 'package:hesn_elmuslim/core/widgets/component.dart';
-import 'package:hesn_elmuslim/features/quran/presentation/quran_off/quran_off_state.dart';
+import 'package:quran/core/local/cache_helper.dart';
+import 'package:quran/core/widgets/component.dart';
+import 'package:quran/features/quran/presentation/quran_off/quran_off_state.dart';
 import 'package:pdfx/pdfx.dart';
 
 import '../../../../core/utils/constants_manager.dart';

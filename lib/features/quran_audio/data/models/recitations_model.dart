@@ -1,4 +1,4 @@
-import 'package:hesn_elmuslim/features/quran_audio/domain/entities/recitations_entity.dart';
+import 'package:quran/features/quran_audio/domain/entities/recitations_entity.dart';
 
 class RecitationsModel extends RecitationsEntity {
   RecitationsModel({List<RecitationEntity>? recitation})

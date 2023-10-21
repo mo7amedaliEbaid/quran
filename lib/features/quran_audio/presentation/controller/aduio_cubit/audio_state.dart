@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:hesn_elmuslim/features/quran_audio/domain/entities/audio_entity.dart';
+import 'package:quran/features/quran_audio/domain/entities/audio_entity.dart';
 
 abstract class AudioState extends Equatable {
   const AudioState();

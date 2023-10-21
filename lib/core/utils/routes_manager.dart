@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hesn_elmuslim/core/widgets/scaffold_custom/scaffold_custom.dart';
-import 'package:hesn_elmuslim/features/home/presentation/screens/home_screen.dart';
-import 'package:hesn_elmuslim/features/quran/presentation/screens/surah_screen.dart';
-import 'package:hesn_elmuslim/features/quran_audio/presentation/screens/quran_audio_screen.dart';
+import 'package:quran/features/main_screen.dart';
+import 'package:quran/features/quran/presentation/screens/surah_screen.dart';
+import 'package:quran/features/quran_audio/presentation/screens/quran_audio_screen.dart';
 import '../../features/quran/presentation/screens/quran_screen.dart';
 import '../../features/quran/presentation/screens/quran_surah_screen.dart';
 import '../../features/quran_audio/presentation/screens/quran_just_audio_screen.dart';

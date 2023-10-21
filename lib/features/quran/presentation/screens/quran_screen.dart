@@ -2,8 +2,8 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hesn_elmuslim/core/local/cache_helper.dart';
-import 'package:hesn_elmuslim/core/widgets/scaffold_custom/scaffold_custom.dart';
+import 'package:quran/core/local/cache_helper.dart';
+import 'package:quran/core/widgets/scaffold_custom/scaffold_custom.dart';
 
 import 'package:pdfx/pdfx.dart';
 

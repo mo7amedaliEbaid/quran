@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hesn_elmuslim/core/widgets/shimmer_custom/shimmer_custom.dart';
-import 'package:hesn_elmuslim/features/quran/presentation/screens/audio.dart';
+import 'package:quran/core/widgets/shimmer_custom/shimmer_custom.dart';
+import 'package:quran/features/quran/presentation/screens/audio.dart';
 import '../../../../core/utils/color_manager.dart';
 import '../../../../core/widgets/app_bar/app_bar_custom.dart';
 import '../../../../core/widgets/error_widget.dart';

@@ -1,4 +1,4 @@
-import 'package:hesn_elmuslim/features/quran/domain/entities/surah_entity.dart';
+import 'package:quran/features/quran/domain/entities/surah_entity.dart';
 
 abstract class SurahStates {}
 

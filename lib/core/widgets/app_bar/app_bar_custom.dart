@@ -1,4 +1,4 @@
-import 'package:hesn_elmuslim/core/utils/font_manager.dart';
+import 'package:quran/core/utils/font_manager.dart';
 
 import '../../../core/utils/color_manager.dart';
 import 'package:flutter/material.dart';

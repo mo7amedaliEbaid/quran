@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hesn_elmuslim/core/usecases/usecase.dart';
-import 'package:hesn_elmuslim/features/quran/domain/entities/quran_audio_entity.dart';
-import 'package:hesn_elmuslim/features/quran/domain/entities/quran_entity.dart';
+import 'package:quran/core/usecases/usecase.dart';
+import 'package:quran/features/quran/domain/entities/quran_audio_entity.dart';
+import 'package:quran/features/quran/domain/entities/quran_entity.dart';
 import '../../../../core/error/failure.dart';
 import '../../domain/usecases/quran_usecase.dart';
 import 'quran_state.dart';

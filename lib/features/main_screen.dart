@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:hesn_elmuslim/features/quran/presentation/screens/quran_screen.dart';
-import 'package:hesn_elmuslim/features/quran/presentation/screens/quran_surah_screen.dart';
+import 'package:quran/features/quran/presentation/screens/quran_screen.dart';
+import 'package:quran/features/quran/presentation/screens/quran_surah_screen.dart';
 
-import '../../../../core/utils/media_query_values.dart';
+import '../core/utils/media_query_values.dart';
 
-import '../../../quran_audio/presentation/screens/recitations_screen.dart';
+import 'quran_audio/presentation/screens/recitations_screen.dart';
 
 
 class HomeScreen extends StatefulWidget {

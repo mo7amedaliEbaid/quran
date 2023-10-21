@@ -1,6 +1,6 @@
-import 'package:hesn_elmuslim/core/utils/values_manager.dart';
-import 'package:hesn_elmuslim/core/widgets/elevated_button/elevated_button_custom.dart';
-import 'package:hesn_elmuslim/core/widgets/text_custom/text_custom.dart';
+import 'package:quran/core/utils/values_manager.dart';
+import 'package:quran/core/widgets/elevated_button/elevated_button_custom.dart';
+import 'package:quran/core/widgets/text_custom/text_custom.dart';
 
 import '../utils/media_query_values.dart';
 import 'package:flutter/material.dart';

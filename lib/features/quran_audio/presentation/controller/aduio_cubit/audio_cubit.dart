@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hesn_elmuslim/core/usecases/usecase.dart';
-import 'package:hesn_elmuslim/core/utils/constants_manager.dart';
+import 'package:quran/core/usecases/usecase.dart';
+import 'package:quran/core/utils/constants_manager.dart';
 
 import '../../../../../core/error/failure.dart';
 import '../../../../quran/data/models/surah_names.dart';

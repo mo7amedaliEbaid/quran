@@ -2,8 +2,8 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:hesn_elmuslim/core/utils/values_manager.dart';
-import 'package:hesn_elmuslim/core/widgets/component.dart';
+import 'package:quran/core/utils/values_manager.dart';
+import 'package:quran/core/widgets/component.dart';
 import '../../../../core/utils/assets_manager.dart';
 import '../../../../core/utils/color_manager.dart';
 import '../../../../core/utils/routes_manager.dart';
@@ -101,7 +101,7 @@ class QuranAudioScreen extends StatelessWidget {
                                     mainAxisSpacing: 20),
                           )
                         : state is GetAudioLoadingState
-                            ?const Center(child: CircularProgressIndicator(),)
+                            ?const Center(child: GridShimmer(),)
                             : ErrorWidgetCustom(onPress: () {
                                 cubit.getAudioFun();
                               }),
