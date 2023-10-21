@@ -22,6 +22,8 @@ It contains the complete quran read by:
 ###### Dependency Injection => get_it
 ###### Audio in background
 ###### Bookmarks
+###### Connectivity Checking
+###### Loading Shimmer
 
 
 # تطبيق القران الكريم 
