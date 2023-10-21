@@ -1,11 +1,11 @@
 import 'package:audio_video_progress_bar/audio_video_progress_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:quran/core/utils/font_manager.dart';
-import 'package:quran/core/utils/values_manager.dart';
-import 'package:quran/core/widgets/cached_image_custom/cached_network_image.dart';
-import 'package:quran/features/quran/data/models/surah_names.dart';
-import 'package:quran/features/quran_audio/presentation/controller/aduio_cubit/audio_cubit.dart';
+import 'package:hesn_elmuslim/core/utils/font_manager.dart';
+import 'package:hesn_elmuslim/core/utils/values_manager.dart';
+import 'package:hesn_elmuslim/core/widgets/cached_image_custom/cached_network_image.dart';
+import 'package:hesn_elmuslim/features/quran/data/models/surah_names.dart';
+import 'package:hesn_elmuslim/features/quran_audio/presentation/controller/aduio_cubit/audio_cubit.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:just_audio_background/just_audio_background.dart';
 import 'package:rxdart/rxdart.dart';

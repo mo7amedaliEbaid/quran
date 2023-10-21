@@ -1,6 +1,6 @@
 import 'package:dartz/dartz.dart';
-import 'package:quran/features/quran/domain/entities/quran_audio_entity.dart';
-import 'package:quran/features/quran/domain/repositories/quran_repository.dart';
+import 'package:hesn_elmuslim/features/quran/domain/entities/quran_audio_entity.dart';
+import 'package:hesn_elmuslim/features/quran/domain/repositories/quran_repository.dart';
 
 import '../../../../core/error/failure.dart';
 import '../../../../core/usecases/usecase.dart';

@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:quran/features/quran_audio/domain/entities/recitations_entity.dart';
+import 'package:hesn_elmuslim/features/quran_audio/domain/entities/recitations_entity.dart';
 
 abstract class RecitationsState extends Equatable {
   const RecitationsState();

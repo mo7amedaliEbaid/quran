@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:quran/features/quran/presentation/screens/quran_screen.dart';
-import 'package:quran/features/quran/presentation/screens/quran_surah_screen.dart';
+import 'package:hesn_elmuslim/features/quran/presentation/screens/quran_screen.dart';
+import 'package:hesn_elmuslim/features/quran/presentation/screens/quran_surah_screen.dart';
 
-import '../core/utils/media_query_values.dart';
+import '../../../../core/utils/media_query_values.dart';
 
-import 'quran_audio/presentation/screens/readers_screen.dart';
+import '../../../quran_audio/presentation/screens/recitations_screen.dart';
 
 
-class MainScreen extends StatefulWidget {
-  const MainScreen({Key? key}) : super(key: key);
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
-  State<MainScreen> createState() => _MainScreenState();
+  State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _MainScreenState extends State<MainScreen> {
+class _HomeScreenState extends State<HomeScreen> {
   List<Widget> screens = [
-    const ReadersScreen(),
+    const RecitationsScreen(),
     const QuranSurahScreen(),
     const QuranScreen(),
   ];
@@ -38,14 +38,13 @@ class _MainScreenState extends State<MainScreen> {
           selectedIndex: currentPageIndex,
           destinations: const <Widget>[
             NavigationDestination(
-              selectedIcon: Icon(Icons.people_alt),
-              icon: Icon(Icons.people_alt_outlined),
-              label: 'القراء',
+              selectedIcon: Icon(Icons.home),
+              icon: Icon(Icons.home_outlined),
+              label: 'القران',
             ),
             NavigationDestination(
-              icon: Icon(Icons.file_copy_outlined),
-              selectedIcon: Icon(Icons.file_copy),
-              label: 'القران',
+              icon: Icon(Icons.audio_file),
+              label: 'القراءة',
             ),
             NavigationDestination(
               selectedIcon: Icon(Icons.my_library_books_sharp),

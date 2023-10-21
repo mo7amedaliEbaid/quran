@@ -2,8 +2,8 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:quran/core/local/cache_helper.dart';
-import 'package:quran/core/widgets/scaffold_custom/scaffold_custom.dart';
+import 'package:hesn_elmuslim/core/local/cache_helper.dart';
+import 'package:hesn_elmuslim/core/widgets/scaffold_custom/scaffold_custom.dart';
 
 import 'package:pdfx/pdfx.dart';
 
@@ -29,48 +29,43 @@ class QuranScreen extends StatelessWidget {
           return ScaffoldCustom(
             appBarCustom: const AppBarCustom(
               text: 'المصحف الكريم',
-              isNull: false,
             ),
             body: Column(
               children: [
-                Padding(
-                  padding:  EdgeInsets.symmetric(vertical: 12.h),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-
-                      ElevatedButtonCustom(
-                        width: 20.w,
-                        text: 'اذهب',
-                        onPressed: () {
-                          // Animate to specified page
-                          quranCubit.pdfController.animateToPage(
-                            int.parse(quranCubit.num.text),
-                            duration: const Duration(milliseconds: 250),
-                            curve: Curves.ease,
-                          );
-                        },
-                      ),
-                      Padding(
-                        padding: EdgeInsets.only(right: 8.0.w),
-                        child: SizedBox(
-                          width: 60.w,
-                          child: TextFormFieldCustom(
-                            fillColor: ColorManager.white,
-                            padding: 10,
-                            validate: (v) {
-                              if (v!.isEmpty) {
-                                return 'رقم الصفحة';
-                              }
-                              return null;
-                            },
-                            keyboardType: TextInputType.number,
-                            controller: quranCubit.num,
-                          ),
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    ElevatedButtonCustom(
+                      width: 70.w,
+                      text: 'اذهب',
+                      onPressed: () {
+                        // Animate to specified page
+                        quranCubit.pdfController.animateToPage(
+                          int.parse(quranCubit.num.text),
+                          duration: const Duration(milliseconds: 250),
+                          curve: Curves.ease,
+                        );
+                      },
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(right: 8.0.w),
+                      child: SizedBox(
+                        width: 60.w,
+                        child: TextFormFieldCustom(
+                          fillColor: ColorManager.white,
+                          padding: 10,
+                          validate: (v) {
+                            if (v!.isEmpty) {
+                              return 'رقم الصفحة';
+                            }
+                            return null;
+                          },
+                          keyboardType: TextInputType.number,
+                          controller: quranCubit.num,
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
                 Expanded(
                   child: Stack(
@@ -152,7 +147,7 @@ class QuranScreen extends StatelessWidget {
                   width: 120.w,
                   padding: EdgeInsets.symmetric(horizontal: 6.w),
                   decoration: BoxDecoration(
-                    color: ColorManager.card1Color,
+                    color: ColorManager.cardColor,
                     borderRadius: BorderRadius.circular(15.r),
                     border: Border.all(color: ColorManager.primary),
                   ),

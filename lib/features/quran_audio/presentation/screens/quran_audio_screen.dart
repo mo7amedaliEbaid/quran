@@ -2,9 +2,8 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:quran/core/utils/values_manager.dart';
-import 'package:quran/core/widgets/component.dart';
-import 'package:quran/core/widgets/shimmer_custom/grid_shimmer.dart';
+import 'package:hesn_elmuslim/core/utils/values_manager.dart';
+import 'package:hesn_elmuslim/core/widgets/component.dart';
 import '../../../../core/utils/assets_manager.dart';
 import '../../../../core/utils/color_manager.dart';
 import '../../../../core/utils/routes_manager.dart';
@@ -12,6 +11,7 @@ import '../../../../core/widgets/app_bar/app_bar_custom.dart';
 import '../../../../core/widgets/error_widget.dart';
 import '../../../../core/widgets/ornament.dart';
 import '../../../../core/widgets/scaffold_custom/scaffold_custom.dart';
+import '../../../../core/widgets/shimmer_custom/grid_shimmer.dart';
 import '../../../../core/widgets/text_custom/text_custom.dart';
 import '../../../quran/data/models/surah_names.dart';
 import '../controller/aduio_cubit/audio_cubit.dart';
@@ -101,7 +101,7 @@ class QuranAudioScreen extends StatelessWidget {
                                     mainAxisSpacing: 20),
                           )
                         : state is GetAudioLoadingState
-                            ?const Center(child: GridShimmer(),)
+                            ?const Center(child: CircularProgressIndicator(),)
                             : ErrorWidgetCustom(onPress: () {
                                 cubit.getAudioFun();
                               }),

@@ -1,4 +1,4 @@
-import 'package:quran/features/quran/domain/entities/quran_audio_entity.dart';
+import 'package:hesn_elmuslim/features/quran/domain/entities/quran_audio_entity.dart';
 
 class QuranAudioModel extends QuranAudioEntity {
   QuranAudioModel({

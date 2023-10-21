@@ -17,7 +17,7 @@ import '../features/quran_audio/data/repositories/recitations_repostiory_impl.da
 import '../features/quran_audio/domain/repositories/recitations_repository.dart';
 import '../features/quran_audio/domain/usecases/recitations_usecase.dart';
 import '../features/quran_audio/presentation/controller/aduio_cubit/audio_cubit.dart';
-import '../features/quran_audio/presentation/controller/readers_cubit/readers_cubit.dart';
+import '../features/quran_audio/presentation/controller/recitations_cubit/recitations_cubit.dart';
 
 
 final sl = GetIt.instance;

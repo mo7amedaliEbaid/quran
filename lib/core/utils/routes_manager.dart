@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:quran/features/main_screen.dart';
-import 'package:quran/features/quran/presentation/screens/surah_screen.dart';
-import 'package:quran/features/quran_audio/presentation/screens/quran_audio_screen.dart';
+import 'package:hesn_elmuslim/core/widgets/scaffold_custom/scaffold_custom.dart';
+import 'package:hesn_elmuslim/features/home/presentation/screens/home_screen.dart';
+import 'package:hesn_elmuslim/features/quran/presentation/screens/surah_screen.dart';
+import 'package:hesn_elmuslim/features/quran_audio/presentation/screens/quran_audio_screen.dart';
 import '../../features/quran/presentation/screens/quran_screen.dart';
 import '../../features/quran/presentation/screens/quran_surah_screen.dart';
 import '../../features/quran_audio/presentation/screens/quran_just_audio_screen.dart';
-import '../../features/quran_audio/presentation/screens/readers_screen.dart';
+import '../../features/quran_audio/presentation/screens/recitations_screen.dart';
 
 
 class Routes {
@@ -45,12 +46,12 @@ class Routes {
 class RoutesMap {
   static Map<String, Widget Function(BuildContext)> routesMap() {
     return {
-      Routes.homeRoute: (BuildContext context) => const MainScreen(),
+      Routes.homeRoute: (BuildContext context) => const HomeScreen(),
 
       Routes.quranRoute: (BuildContext context) => const QuranSurahScreen(),
       Routes.quranOffRoute: (BuildContext context) => const QuranScreen(),
       Routes.recitationsRoute: (BuildContext context) =>
-          const ReadersScreen(),
+          const RecitationsScreen(),
       Routes.quranSoundRoute: (BuildContext context) =>
           const QuranAudioScreen(),
       Routes.quranAudioRoute: (BuildContext context) =>
@@ -64,7 +65,7 @@ class RoutesMap {
     switch (screen) {
 
       case Routes.homeRoute:
-        return const MainScreen();
+        return const HomeScreen();
 
 
 
@@ -73,7 +74,7 @@ class RoutesMap {
       case Routes.quranOffRoute:
         return const QuranScreen();
       case Routes.recitationsRoute:
-        return const ReadersScreen();
+        return const RecitationsScreen();
       case Routes.quranSoundRoute:
         return const QuranAudioScreen();
       case Routes.quranAudioRoute:
@@ -83,7 +84,7 @@ class RoutesMap {
         return const SurahScreen();
 
       default:
-        return const MainScreen();
+        return const HomeScreen();
     }
   }
 }
