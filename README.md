@@ -1,16 +1,6 @@
 # quran
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<p float="left">
+   <img src="https://github.com/mo7amedaliEbaid/easy-chat/blob/2c6808e1c4103bd296aa6a690c91a3582f9dce2a/easychat_screenshots/onetoone.png" width="170" />
+   <img src="https://github.com/mo7amedaliEbaid/easy-chat/blob/2c6808e1c4103bd296aa6a690c91a3582f9dce2a/easychat_screenshots/videocall.png" width="170" />
+</p>
