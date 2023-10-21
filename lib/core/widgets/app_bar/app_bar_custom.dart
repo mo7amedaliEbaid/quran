@@ -35,7 +35,7 @@ class AppBarCustom extends StatelessWidget implements PreferredSizeWidget {
     this.textAlign = TextAlign.center,
     this.fontSize = FontSize.s12 * 2,
     this.fontWeight = FontWeight.w600,
-    this.backgroundColor = ColorManager.scaffold,
+    this.backgroundColor = ColorManager.secondary1,
     this.brightness = Brightness.dark,
     this.textColor = ColorManager.black,
     this.iconColor = ColorManager.primary,

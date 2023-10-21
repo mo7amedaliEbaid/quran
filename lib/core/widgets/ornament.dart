@@ -10,7 +10,7 @@ class Ornament extends StatelessWidget {
   const Ornament(
       {Key? key,
       required this.iconName,
-      this.iconColor = ColorManager.secondary})
+      this.iconColor = ColorManager.secondary3})
       : super(key: key);
 
   @override

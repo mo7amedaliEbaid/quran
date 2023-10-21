@@ -1,4 +1,3 @@
-/*
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -24,7 +23,7 @@ ThemeData getApplicationTheme() {
       color: ColorManager.black,
     ),
     progressIndicatorTheme:
-        const ProgressIndicatorThemeData(color: ColorManager.primary),
+        const ProgressIndicatorThemeData(color: ColorManager.secondary),
 
     bottomNavigationBarTheme: const BottomNavigationBarThemeData(
       selectedItemColor: ColorManager.black,
@@ -51,7 +50,7 @@ ThemeData getApplicationTheme() {
         elevation: AppSize.s0,
         systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarIconBrightness: Brightness.dark,
-          statusBarColor: ColorManager.scaffold,
+          statusBarColor: ColorManager.secondary1,
         ),
         titleTextStyle: getRegularStyle(
             fontSize: FontSize.s16, color: ColorManager.scaffold)),
@@ -70,12 +69,12 @@ ThemeData getApplicationTheme() {
         style: ElevatedButton.styleFrom(
             textStyle: getRegularStyle(
                 color: ColorManager.white, fontSize: FontSize.s17),
-            backgroundColor: ColorManager.primary,
+            backgroundColor: ColorManager.secondary1,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(AppSize.s12)))),
 
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
-      backgroundColor: ColorManager.secondary,
+      backgroundColor: ColorManager.secondary1,
     ),
 
     textTheme: TextTheme(
@@ -125,4 +124,3 @@ ThemeData getApplicationTheme() {
     // label style
   );
 }
-*/

@@ -60,7 +60,7 @@ class QuranAudio extends StatelessWidget {
                         icon: Icon(
                             cubit.isPlaying ? Icons.pause : Icons.play_arrow),
                         iconSize: AppSize.s50,
-                        color: ColorManager.white,
+                        color: ColorManager.greenColor,
                       ),
                     ),
                     TextCustom(

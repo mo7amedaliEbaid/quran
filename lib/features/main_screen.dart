@@ -38,13 +38,14 @@ class _HomeScreenState extends State<HomeScreen> {
           selectedIndex: currentPageIndex,
           destinations: const <Widget>[
             NavigationDestination(
-              selectedIcon: Icon(Icons.home),
-              icon: Icon(Icons.home_outlined),
-              label: 'القران',
+              selectedIcon: Icon(Icons.people),
+              icon: Icon(Icons.people_alt_outlined),
+              label: 'القراء',
             ),
             NavigationDestination(
-              icon: Icon(Icons.audio_file),
-              label: 'القراءة',
+              icon: Icon(Icons.folder_copy_outlined),
+              selectedIcon: Icon(Icons.folder_copy),
+              label: 'القران',
             ),
             NavigationDestination(
               selectedIcon: Icon(Icons.my_library_books_sharp),

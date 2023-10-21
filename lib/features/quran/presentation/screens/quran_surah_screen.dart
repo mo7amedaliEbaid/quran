@@ -22,6 +22,7 @@ class QuranSurahScreen extends StatelessWidget {
     return ScaffoldCustom(
       appBarCustom: const AppBarCustom(
         text: 'القرآن',
+        isNull: false,
       ),
       body: BlocProvider.value(
         value: BlocProvider.of<QuranCubit>(context)..getQuranFun(),

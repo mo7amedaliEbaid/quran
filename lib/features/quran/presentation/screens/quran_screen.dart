@@ -29,43 +29,47 @@ class QuranScreen extends StatelessWidget {
           return ScaffoldCustom(
             appBarCustom: const AppBarCustom(
               text: 'المصحف الكريم',
+              isNull: false,
             ),
             body: Column(
               children: [
-                Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    ElevatedButtonCustom(
-                      width: 70.w,
-                      text: 'اذهب',
-                      onPressed: () {
-                        // Animate to specified page
-                        quranCubit.pdfController.animateToPage(
-                          int.parse(quranCubit.num.text),
-                          duration: const Duration(milliseconds: 250),
-                          curve: Curves.ease,
-                        );
-                      },
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(right: 8.0.w),
-                      child: SizedBox(
-                        width: 60.w,
-                        child: TextFormFieldCustom(
-                          fillColor: ColorManager.white,
-                          padding: 10,
-                          validate: (v) {
-                            if (v!.isEmpty) {
-                              return 'رقم الصفحة';
-                            }
-                            return null;
-                          },
-                          keyboardType: TextInputType.number,
-                          controller: quranCubit.num,
+                Padding(
+                  padding:  EdgeInsets.symmetric(vertical:10.h),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      ElevatedButtonCustom(
+                        width: 20.w,
+                        text: 'اذهب',
+                        onPressed: () {
+                          // Animate to specified page
+                          quranCubit.pdfController.animateToPage(
+                            int.parse(quranCubit.num.text),
+                            duration: const Duration(milliseconds: 250),
+                            curve: Curves.ease,
+                          );
+                        },
+                      ),
+                      Padding(
+                        padding: EdgeInsets.only(right: 8.0.w),
+                        child: SizedBox(
+                          width: 60.w,
+                          child: TextFormFieldCustom(
+                            fillColor: ColorManager.white,
+                            padding: 10,
+                            validate: (v) {
+                              if (v!.isEmpty) {
+                                return 'رقم الصفحة';
+                              }
+                              return null;
+                            },
+                            keyboardType: TextInputType.number,
+                            controller: quranCubit.num,
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
                 Expanded(
                   child: Stack(
@@ -147,7 +151,7 @@ class QuranScreen extends StatelessWidget {
                   width: 120.w,
                   padding: EdgeInsets.symmetric(horizontal: 6.w),
                   decoration: BoxDecoration(
-                    color: ColorManager.cardColor,
+                    color: ColorManager.card1Color,
                     borderRadius: BorderRadius.circular(15.r),
                     border: Border.all(color: ColorManager.primary),
                   ),
