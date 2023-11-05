@@ -6,7 +6,6 @@ import 'package:dio/io.dart';
 import 'package:flutter/foundation.dart';
 import '../../di/di.dart' as di;
 import '../error/exceptions.dart';
-import '../utils/constants_manager.dart';
 import 'api_consumer.dart';
 import 'app_interceptors.dart';
 import 'end_points.dart';

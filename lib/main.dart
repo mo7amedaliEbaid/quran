@@ -21,7 +21,7 @@ import 'observer.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Wakelock.enable();
+ //  Wakelock.enable();
 
   await di.init();
   await CacheHelper.init();
