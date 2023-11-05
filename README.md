@@ -13,15 +13,17 @@ It contains the complete quran read by:
 - [Mohamed Mahmoud Tablawi](https://www.assabile.com/mohamed-tablawi-31/mohamed-tablawi.htm)
 - [Abdul-Rahman Al-Sudais](https://en.wikipedia.org/wiki/Abdul-Rahman_Al-Sudais)
 
-#### Clean Architecture
-#### Cubits
-#### Audio Players
-#### Pdf Viewer
-#### Networking => dio
-#### Responsive Design => screenutil
-#### Dependency Injection => get_it
-#### Audio in background
-#### Bookmarks
+###### Clean Architecture
+###### Cubits
+###### Audio Players
+###### Pdf Viewer
+###### Networking => dio
+###### Responsive Design => screenutil
+###### Dependency Injection => get_it
+###### Audio in background
+###### Bookmarks
+###### Connectivity Checking
+###### Loading Shimmer
 
 
 # تطبيق القران الكريم 
@@ -39,7 +41,7 @@ It contains the complete quran read by:
 
 
 ## Demo Video
-<a href="https://youtu.be/VcwoKGzpOng"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/2560px-Logo_of_YouTube_%282015-2017%29.svg.png" width="170"></img></a>
+<a href="https://youtu.be/VcwoKGzpOng"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/2560px-Logo_of_YouTube_%282015-2017%29.svg.png" width="100"></img></a>
 
 ## Screenshots
 <p float="left">
