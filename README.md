@@ -1,8 +1,9 @@
-# quran
+# Quran Flutter App
 
-Flutter Quran app to read or listen to the holly quran.
+Welcome to the Quran Flutter app, a comprehensive tool to read or listen to the Holy Quran. This app offers a range of features to enhance your Quranic experience.
 
-It contains the complete quran read by:
+
+## Featured Reciters
 - [Abdul Basit 'Abd us-Samad.](https://en.wikipedia.org/wiki/Abdul_Basit_%27Abd_us-Samad)
 - [Muhammad Siddiq Al-Minshawi.](https://en.wikipedia.org/wiki/Muhammad_Siddiq_Al-Minshawi)
 - [Abu Bakr Al-Shatri.](https://www.duroosulislam.com/2018/11/abu-bakr-al-shatri.html)
@@ -14,18 +15,19 @@ It contains the complete quran read by:
 - [Abdul-Rahman Al-Sudais](https://en.wikipedia.org/wiki/Abdul-Rahman_Al-Sudais)
 
 
-## Features.
+## Key Features
+
 - Clean Architecture
-- Cubits
-- Audio Players
-- Pdf Viewer
-- Networking => dio
-- Responsive Design => screenutil
-- Dependency Injection => get_it
-- Audio in background
-- Bookmarks
-- Connectivity Checking
-- Loading Shimmer
+- Cubits for state management
+- Audio Players for seamless recitation
+- Pdf Viewer for reading convenience
+- Networking with Dio
+- Responsive Design using screenutil
+- Dependency Injection with get_it
+- Background Audio support
+- Bookmarks for saving your favorite verses
+- Connectivity Checking to ensure a smooth experience
+- Loading Shimmer for a polished UI
 
 
 # تطبيق القران الكريم 
