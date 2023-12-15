@@ -1,6 +1,6 @@
 # Quran Flutter App
 
-Welcome to the Quran Flutter app, a comprehensive tool to read or listen to the Holy Quran. This app offers a range of features to enhance your Quranic experience.
+Welcome to the Quran Flutter app, a comprehensive tool to read or listen to the Holy Quran.
 
 
 ## Featured Reciters
